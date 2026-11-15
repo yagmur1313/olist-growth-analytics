@@ -1,0 +1,448 @@
+{
+  "headline": {
+    "orders": 97905,
+    "gmv_brl": 15688397,
+    "customers": 94703,
+    "repeat_order_share": 0.0236,
+    "repeat_gmv_share": 0.022,
+    "repeat_rate_90d": 0.0131,
+    "repeat_rate_180d": 0.0199,
+    "repeat_rate_any": 0.0217,
+    "median_days_to_second_purchase": 74.0,
+    "customers_with_same_day_extra_order_only": 867,
+    "gmv_growth_jan_aug_2018_vs_2017": 1.404,
+    "new_customer_share_of_active_2018": 0.9762
+  },
+  "metric_tree_jan_aug_yoy": {
+    "gmv": 1.404,
+    "active": 1.39,
+    "new": 1.356,
+    "returning": 3.922,
+    "orders_per_customer": -0.007,
+    "aov": 0.013
+  },
+  "funnel": [
+    {
+      "stage": "Order placed",
+      "customers": 77799,
+      "pct_of_start": 1.0,
+      "step_conversion": NaN
+    },
+    {
+      "stage": "Payment approved",
+      "customers": 76806,
+      "pct_of_start": 0.9872,
+      "step_conversion": 0.9872
+    },
+    {
+      "stage": "Handed to carrier",
+      "customers": 76273,
+      "pct_of_start": 0.9804,
+      "step_conversion": 0.9931
+    },
+    {
+      "stage": "Delivered",
+      "customers": 75349,
+      "pct_of_start": 0.9685,
+      "step_conversion": 0.9879
+    },
+    {
+      "stage": "Delivered on time",
+      "customers": 69659,
+      "pct_of_start": 0.8954,
+      "step_conversion": 0.9245
+    },
+    {
+      "stage": "Happy review (4-5 stars)",
+      "customers": 56871,
+      "pct_of_start": 0.731,
+      "step_conversion": 0.8164
+    },
+    {
+      "stage": "Second purchase within 90d",
+      "customers": 788,
+      "pct_of_start": 0.0101,
+      "step_conversion": 0.0139
+    }
+  ],
+  "cohort_avg_retention_by_month": {
+    "1": 0.00483,
+    "2": 0.00333,
+    "3": 0.00253,
+    "4": 0.00289,
+    "5": 0.00229,
+    "6": 0.00257,
+    "7": 0.00209,
+    "8": 0.0021,
+    "9": 0.00159,
+    "10": 0.00267,
+    "11": 0.00205,
+    "12": 0.00221
+  },
+  "review_by_delay_bucket": [
+    {
+      "delay_bucket": "10+ days early",
+      "customers": 59172,
+      "avg_review": 4.324,
+      "one_star": 0.064
+    },
+    {
+      "delay_bucket": "5\u20139 early",
+      "customers": 19429,
+      "avg_review": 4.254,
+      "one_star": 0.068
+    },
+    {
+      "delay_bucket": "0\u20134 early",
+      "customers": 7618,
+      "avg_review": 4.118,
+      "one_star": 0.078
+    },
+    {
+      "delay_bucket": "1\u20133 late",
+      "customers": 1802,
+      "avg_review": 3.292,
+      "one_star": 0.251
+    },
+    {
+      "delay_bucket": "4\u20137 late",
+      "customers": 1692,
+      "avg_review": 2.089,
+      "one_star": 0.589
+    },
+    {
+      "delay_bucket": "8\u201314 late",
+      "customers": 1407,
+      "avg_review": 1.674,
+      "one_star": 0.704
+    },
+    {
+      "delay_bucket": "15+ late",
+      "customers": 1296,
+      "avg_review": 1.715,
+      "one_star": 0.693
+    }
+  ],
+  "late_vs_ontime": {
+    "share_first_orders_late": 0.0671,
+    "avg_review_on_time": 4.29,
+    "avg_review_late": 2.27,
+    "repeat_180d_on_time": 0.0203,
+    "repeat_180d_late": 0.0162,
+    "z_test_p_value": 0.08004433891954021,
+    "repeat_180d_by_review": {
+      "1": 0.0172,
+      "2": 0.0151,
+      "3": 0.0193,
+      "4": 0.0185,
+      "5": 0.0214
+    }
+  },
+  "late_rate_peaks": [
+    {
+      "order_month": "2018-03",
+      "late_delivery_rate": 0.1896,
+      "avg_review_score": 3.764
+    },
+    {
+      "order_month": "2018-02",
+      "late_delivery_rate": 0.1413,
+      "avg_review_score": 3.859
+    },
+    {
+      "order_month": "2017-11",
+      "late_delivery_rate": 0.124,
+      "avg_review_score": 3.949
+    }
+  ],
+  "logit": {
+    "n": 55736,
+    "base_rate": 0.02,
+    "model1_is_late": {
+      "odds_ratio": 0.797,
+      "ci_low": 0.614,
+      "ci_high": 1.035,
+      "p_value": 0.08864
+    },
+    "model2_is_late": {
+      "odds_ratio": 0.859,
+      "ci_low": 0.652,
+      "ci_high": 1.132,
+      "p_value": 0.27993
+    },
+    "model2_happy_review": {
+      "odds_ratio": 1.142,
+      "ci_low": 0.974,
+      "ci_high": 1.338,
+      "p_value": 0.10181
+    },
+    "category_odds_vs_bed_bath_table": {
+      "cool_stuff": 0.383,
+      "computers_accessories": 0.56,
+      "auto": 0.582,
+      "housewares": 0.587,
+      "electronics": 0.605,
+      "toys": 0.642,
+      "telephony": 0.661,
+      "watches_gifts": 0.668,
+      "other": 0.701,
+      "health_beauty": 0.738,
+      "perfumery": 0.739,
+      "baby": 0.772,
+      "garden_tools": 0.803,
+      "furniture_decor": 0.919,
+      "sports_leisure": 0.97
+    }
+  },
+  "category_repeat_180d": [
+    {
+      "first_order_category": "cool_stuff",
+      "n": 2576,
+      "rate": 0.0105,
+      "aov": 193.9306
+    },
+    {
+      "first_order_category": "computers_accessories",
+      "n": 3844,
+      "rate": 0.0153,
+      "aov": 166.923
+    },
+    {
+      "first_order_category": "unknown",
+      "n": 1018,
+      "rate": 0.0157,
+      "aov": 150.5932
+    },
+    {
+      "first_order_category": "auto",
+      "n": 1899,
+      "rate": 0.0158,
+      "aov": 185.3751
+    },
+    {
+      "first_order_category": "stationery",
+      "n": 1374,
+      "rate": 0.016,
+      "aov": 121.2393
+    },
+    {
+      "first_order_category": "electronics",
+      "n": 1411,
+      "rate": 0.0163,
+      "aov": 76.7579
+    },
+    {
+      "first_order_category": "housewares",
+      "n": 2929,
+      "rate": 0.0164,
+      "aov": 122.0368
+    },
+    {
+      "first_order_category": "toys",
+      "n": 2610,
+      "rate": 0.0176,
+      "aov": 144.6788
+    },
+    {
+      "first_order_category": "telephony",
+      "n": 2604,
+      "rate": 0.0177,
+      "aov": 78.5743
+    },
+    {
+      "first_order_category": "watches_gifts",
+      "n": 2649,
+      "rate": 0.0181,
+      "aov": 247.3513
+    },
+    {
+      "first_order_category": "health_beauty",
+      "n": 4369,
+      "rate": 0.0199,
+      "aov": 162.1557
+    },
+    {
+      "first_order_category": "perfumery",
+      "n": 1968,
+      "rate": 0.0203,
+      "aov": 141.9336
+    },
+    {
+      "first_order_category": "baby",
+      "n": 1487,
+      "rate": 0.0208,
+      "aov": 157.9432
+    },
+    {
+      "first_order_category": "garden_tools",
+      "n": 2298,
+      "rate": 0.0218,
+      "aov": 160.6724
+    },
+    {
+      "first_order_category": "furniture_decor",
+      "n": 3707,
+      "rate": 0.0251,
+      "aov": 134.0315
+    },
+    {
+      "first_order_category": "sports_leisure",
+      "n": 4532,
+      "rate": 0.0263,
+      "aov": 149.3575
+    },
+    {
+      "first_order_category": "bed_bath_table",
+      "n": 5378,
+      "rate": 0.0275,
+      "aov": 131.0967
+    },
+    {
+      "first_order_category": "fashion_bags_accessories",
+      "n": 1147,
+      "rate": 0.0323,
+      "aov": 97.5868
+    }
+  ],
+  "rfm": [
+    {
+      "segment": "Champions",
+      "customers": 1080,
+      "gmv": 354270.28,
+      "avg_gmv": 328.028,
+      "avg_recency": 89.4565,
+      "avg_frequency": 2.1537,
+      "share_customers": 0.0114,
+      "share_gmv": 0.0226
+    },
+    {
+      "segment": "Loyal - at risk",
+      "customers": 972,
+      "gmv": 306068.5,
+      "avg_gmv": 314.8853,
+      "avg_recency": 310.5905,
+      "avg_frequency": 2.0874,
+      "share_customers": 0.0103,
+      "share_gmv": 0.0195
+    },
+    {
+      "segment": "New high-value",
+      "customers": 14705,
+      "gmv": 4461980.67,
+      "avg_gmv": 303.4329,
+      "avg_recency": 94.4583,
+      "avg_frequency": 1.0,
+      "share_customers": 0.1553,
+      "share_gmv": 0.2844
+    },
+    {
+      "segment": "New customers",
+      "customers": 22093,
+      "gmv": 1615206.18,
+      "avg_gmv": 73.1094,
+      "avg_recency": 92.4762,
+      "avg_frequency": 1.0,
+      "share_customers": 0.2333,
+      "share_gmv": 0.103
+    },
+    {
+      "segment": "Cooling down",
+      "customers": 18551,
+      "gmv": 2853834.98,
+      "avg_gmv": 153.8373,
+      "avg_recency": 222.4517,
+      "avg_frequency": 1.0,
+      "share_customers": 0.1959,
+      "share_gmv": 0.1819
+    },
+    {
+      "segment": "Lost high-value",
+      "customers": 14272,
+      "gmv": 4417043.82,
+      "avg_gmv": 309.4902,
+      "avg_recency": 394.8828,
+      "avg_frequency": 1.0,
+      "share_customers": 0.1507,
+      "share_gmv": 0.2816
+    },
+    {
+      "segment": "Lost low-value",
+      "customers": 23019,
+      "gmv": 1678178.61,
+      "avg_gmv": 72.9041,
+      "avg_recency": 396.7351,
+      "avg_frequency": 1.0,
+      "share_customers": 0.2431,
+      "share_gmv": 0.107
+    }
+  ],
+  "ab_design": {
+    "baseline_repeat_90d": 0.0131,
+    "monthly_new_customers_2018": 6458,
+    "alpha": 0.05,
+    "power": 0.8,
+    "options": [
+      {
+        "relative_mde": 0.1,
+        "n_per_arm": 124262,
+        "months_to_enroll": 38.5
+      },
+      {
+        "relative_mde": 0.2,
+        "n_per_arm": 32475,
+        "months_to_enroll": 10.1
+      },
+      {
+        "relative_mde": 0.3,
+        "n_per_arm": 15047,
+        "months_to_enroll": 4.7
+      },
+      {
+        "relative_mde": 0.5,
+        "n_per_arm": 5846,
+        "months_to_enroll": 1.8
+      }
+    ]
+  },
+  "ab_simulation": {
+    "note": "SIMULATED data (seed 42) to demonstrate the analysis workflow \u2014 not a real experiment.",
+    "hypothesis": "A R$10 second-purchase coupon sent 7 days after delivery increases 90-day repeat rate.",
+    "n_per_arm": 15047,
+    "control_rate": 0.01156,
+    "treatment_rate": 0.01708,
+    "absolute_lift_pp": 0.552,
+    "relative_lift": 0.477,
+    "diff_ci_95_pp": [
+      0.283,
+      0.82
+    ],
+    "p_value": 6e-05,
+    "assumed_coupon_cost_brl": 10.0,
+    "assumed_take_rate": 0.15,
+    "avg_repeat_order_gmv": 149.17,
+    "incremental_orders_per_1000": 5.52,
+    "incremental_margin_per_1000_brl": 123.42,
+    "coupon_cost_per_1000_brl": 170.8
+  },
+  "opportunity": {
+    "annual_new_customers_run_rate": 77500,
+    "gmv_per_repeat_customer": 167.41,
+    "scenarios": {
+      "+0.5pp": {
+        "target_repeat_180d": 0.0249,
+        "extra_repeat_customers": 388,
+        "extra_gmv_brl": 64872
+      },
+      "+1pp": {
+        "target_repeat_180d": 0.0299,
+        "extra_repeat_customers": 775,
+        "extra_gmv_brl": 129745
+      },
+      "x2": {
+        "target_repeat_180d": 0.0398,
+        "extra_repeat_customers": 1543,
+        "extra_gmv_brl": 258234
+      }
+    }
+  }
+}
